@@ -1,15 +1,20 @@
 nav li{
   display:inline;
-  padding-right: 20px;
+  padding-right: 5px;
+  padding-left: 20px;
 
 }
 
 nav a{
   color: black;
-  font-weight: bold;
-  text-decoration: underline; 
+  font-weight: lighter;
+  text-decoration: none;
 }
 
+nav ul li.active a {
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 nav {
     background-color: #ddd;
@@ -21,13 +26,135 @@ nav {
 
 .skip {
   position: absolute;
-  top: -20px;
+  top: -40px;
   left: 0;
   z-index: 10;
   transition: top 0.3s;
 }
 
 .skip:focus {
-  top: 0;
+  position: static;
+  top: 30;
 }
 
+
+h1 {
+  font-size: 2.5em; 
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #333;  /* Dark color for emphasis */
+  margin: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  color: #555;  /* Slightly lighter than h1 for less emphasis */
+  margin: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  color: #777;  /* Even lighter than h2 for further reduced emphasis */
+  margin: 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #666;
+  margin: 20px;
+}
+
+li {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+  color: #666;
+  margin-left: 40px;
+}
+
+img {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 350px;  /* Desired width */
+  height: 200px;  /* Desired height */
+  display: block;  /* To remove inline spacing */
+  object-fit: cover;  /* Scale the image to cover the container */
+  object-position: center;  /* Center the image in the box */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.brulcat img{
+  grid-column: 1 / -1;
+}
+
+.codedog {
+  grid-column: 1 / -1;
+}
+
+.peddiedog {
+  grid-column: 1 / -1;
+}
+
+.junodog {
+  grid-column: 1 / -1;
+}
+
+.boston {
+  grid-column: 1 / -1;
+}
+
+.hangzhou {
+  grid-column: 1 / -1;
+}
+
+.paris {
+  grid-column: 1 / -1;
+}
+
+.yellowstone {
+  grid-column: 1 / -1;
+}
+
+.nyc {
+  grid-column: 1 / -1;
+}
+
+.seattle {
+  grid-column: 1 / -1;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .gif {
+      display: none;
+  }
+
+  html{
+    scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+  }
+
+/*Turn off parallax*/
+  header{
+    background-attachment: initial;
+  }
+
+}

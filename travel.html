@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Travel</title>
 </head>
 <body>
-    <a href = "">Skip to Main Content</a>
+    <a href="#main" class="skip">Skip to Main Content</a>
     <header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul>
 				<li><a href = "index.html" >Pets</a></li>
-				<li><a href = "travel.html">Travel</a></li>
+				<li class="active"><a href = "travel.html">Travel</a></li>
 				<li><a href = "recipes.html">Recipes</a></li>
 			</ul>
 		</nav>
         <h1>Travel</h1>
 	</header>
 
-    <main>
+    <main id="main" class="container">
         
-        <div>
+        <div class="boston">
             <h2>Boston</h2>
     
-            <img src="images/boston_city.gif" width="400" alt="Boston city street view">
+            <img src="images/boston_city.gif" width="400" alt="Boston city street view" class="gif">
             <img src="images/boston_main.jpg" width = "400" alt="River view of Boston in sunny day">
 
             <h3>Geographical Location: North America</h3>
@@ -49,10 +50,11 @@
             </figure>
             
         </div>
-        <div>
+
+        <div class="hangzhou">
             <h2>Hangzhou</h2>
     
-            <img src="images/hangzhou.gif" width="400" alt="Hangzhou night street view">
+            <img src="images/hangzhou.gif" width="400" alt="Hangzhou night street view" class="gif">
             <img src="images/hangzhou_main.jpg" width = "400" alt="Hangzhou Tower with river view">
 
             <h3>Geographical Location: Asia</h3>
@@ -76,10 +78,11 @@
                 <figcaption>Alibaba Group is a multinational conglomerate based in China, known for its e-commerce platforms, cloud computing services, and digital technology innovations, playing a pivotal role in shaping the global digital economy.</figcaption>
             </figure>
         </div>
-        <div>
+
+        <div class="paris">
             <h2>Paris</h2>
     
-            <img src="images/paris.gif" width="400" alt="Eiffel Tower">
+            <img src="images/paris.gif" width="400" alt="Eiffel Tower" class="gif">
             <img src="images/paris_main.jpg" width = "400" alt="Paris city view">
 
             <h3>Geographical Location: Europe</h3>
@@ -104,10 +107,10 @@
             </figure>
         </div>
 
-        <div>
+        <div class="yellowstone">
             <h2>Yellowstone</h2>
     
-            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron.">
+            <img src="images/yellowstone_cauldron.gif" width="400" alt="Bubbling cauldron." class="gif">
             <img src="images/yellowstone_cauldron.jpg" width = "400" alt="Bubbling cauldron">
 
             <h3>Geographical Location: North America</h3>
@@ -150,10 +153,11 @@
             </figure>
             <!-- Colleen van Lent -->
         </div>
-        <div>
+
+        <div class="nyc">
             <h2>NYC</h2>
     
-            <img src="images/nyc.gif" width="400" alt="New York City">
+            <img src="images/nyc.gif" width="400" alt="New York City" class="gif">
             <img src="images/nyc_buildings.jpg" width = "400" alt="New York City's buildings">
 
             <h3>Geographical Location: North America</h3>
@@ -178,10 +182,10 @@
             </figure>
         </div>
 
-        <div>
+        <div class="seattle">
             <h2>Seattle</h2>
     
-            <img src="images/seattle.gif" width="400" alt="A gif with Seattle elements">
+            <img src="images/seattle.gif" width="400" alt="A gif with Seattle elements" class="gif">
             <img src="images/seattle_main.jpg" width = "400" alt="Seattle city view at night">
 
             <h3>Geographical Location: North America</h3>
